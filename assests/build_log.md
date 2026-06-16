@@ -4,3 +4,6 @@
 - Set up ESP32 Firmware
 - Orginized project to folders
 - Creating CAD, Assets and Docs
+- Took screenshots
+- Wrote ReadME
+- Wrote Boom.csv
