@@ -1,0 +1,6 @@
+- June 14 - 16, 
+- Created Repo
+- Instaled PlatformIO
+- Set up ESP32 Firmware
+- Orginized project to folders
+- Creating CAD, Assets and Docs
