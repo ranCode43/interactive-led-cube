@@ -1,9 +1,10 @@
-- June 14 - 16, 
+- June 14 - 16, 7 hours so far
 - Created Repo
 - Instaled PlatformIO
 - Set up ESP32 Firmware
 - Orginized project to folders
-- Creating CAD, Assets and Docs
+- Creating CAD in Fusion360
+- Assets and Docs
 - Took screenshots
 - Wrote ReadME
-- Wrote Boom.csv
+- Wrote Boom.csv 
