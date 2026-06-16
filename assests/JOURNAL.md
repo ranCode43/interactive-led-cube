@@ -1,4 +1,4 @@
-- June 14 - 16, 7 hours so far
+- June 13 - 16, 7 hours so far
 - Created Repo
 - Instaled PlatformIO
 - Set up ESP32 Firmware
