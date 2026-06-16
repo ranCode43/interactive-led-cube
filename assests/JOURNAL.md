@@ -2,6 +2,7 @@
 - Created Repo
 - Instaled PlatformIO
 - Set up ESP32 Firmware
+- Drew Wiring Diagram
 - Orginized project to folders
 - Creating CAD in Fusion360
 - Assets and Docs
