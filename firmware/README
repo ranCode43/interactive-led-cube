@@ -1,0 +1,9 @@
+This firmware will run on the ESP32 Dev Kit.
+
+Features,
+
+- Audio reactive LED
+- Motion reactive effects
+- Multiiple lighting modes
+- Push button mode switching
+- WS2812b LED Maatrix control
