@@ -1,4 +1,4 @@
-- June 13 - 16, 7 hours so far
+- June 13 - 21, 12 hours so far
 - Created Repo
 - Instaled PlatformIO
 - Set up ESP32 Firmware
@@ -8,4 +8,6 @@
 - Assets and Docs
 - Took screenshots
 - Wrote ReadME
-- Wrote Boom.csv 
+- Wrote Boom.csv
+- FULL CAD ASSEMPLY Finshed
+- Organized some files
