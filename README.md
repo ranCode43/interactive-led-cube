@@ -37,7 +37,8 @@ The firmware is located in the firmware/ folder and is developed using PlatformI
 See docs/build_log.md for project progress and development history.
 
 ## CAD Render
-<img width="1540" height="826" alt="Screenshot 2026-06-15 222419" src="https://github.com/user-attachments/assets/3f2804c1-da0e-4758-a9c8-d3c22a385ff5" />
+<img width="711" height="660" alt="Screenshot 2026-06-21 134044" src="https://github.com/user-attachments/assets/8bf18238-1645-425f-990e-a661f17b8df1" />
+
 
 <img width="1464" height="848" alt="Screenshot 2026-06-15 222832" src="https://github.com/user-attachments/assets/79734bfa-ba1c-42e3-a499-0ab3df02985b" />
 
