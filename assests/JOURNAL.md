@@ -11,3 +11,8 @@
 - Wrote Boom.csv
 - FULL CAD ASSEMPLY Finshed
 - Organized some files
+
+July 24- July 29 , 8 hours
+
+- Firmware Finshed
+- Fusion remodeled
