@@ -1,17 +1,80 @@
 #include <Arduino.h>
 
-void setup() {
-  Serial.begin(115200);
-  Serial.println("Interactive LED Cube starting...");
+#include "animations.h"
+#include "button.h"
+#include "cube_state.h"
+#include "led_effects.h"
+#include "microphone.h"
+#include "motion.h"
 
-   /* TODO
-    INTILIZE W2812b LED Matrices
-     INTILIZE MAX4466 microphone
-     Intilize MMPU6050 sensor
-     INitlaize push button*/
+unsigned long lastButtonPress = 0;
+
+void setup()
+{
+    Serial.begin(115200);
+
+    initializeLEDs();
+
+    initializeMic();
+
+    initializeMPU();
+
+    initializeButton();
+
+    cubeState.currentMode = 0;
+
+    turnGreen();
+
+    delay(1000);
+
+    clearLEDs();
 }
 
-void loop() {
-  Serial.println("Looping...");
-  delay(1000);
+void loop()
+{
+    // ----------------------------
+    // Read Button
+    // ----------------------------
+
+    cubeState.buttonPressed = buttonPressed();
+
+    if (cubeState.buttonPressed)
+    {
+        if (millis() - lastButtonPress > 250)
+        {
+            nextMode();
+
+            lastButtonPress = millis();
+        }
+    }
+
+    // ----------------------------
+    // Read Microphone
+    // ----------------------------
+
+    cubeState.microphoneVolume = getVolume();
+
+    cubeState.beatDetected = detectBeat();
+
+    cubeState.clapDetected = detectClap();
+
+    // ----------------------------
+    // Read MPU6050
+    // ----------------------------
+
+    cubeState.shakeDetected = detectShake();
+
+    cubeState.tiltLeft = detectTiltLeft();
+
+    cubeState.tiltRight = detectTiltRight();
+
+    cubeState.flipDetected = detectFlip();
+
+    // ----------------------------
+    // Run Current Animation
+    // ----------------------------
+
+    runAnimation();
+
+    delay(20);
 }
