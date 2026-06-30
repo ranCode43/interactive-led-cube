@@ -57,9 +57,6 @@ The firmware is organized into independent modules so each subsystem has a singl
 - main.cpp → Main control loop
 
 
-## Wiring Diagram
-
-<img width="4032" height="3024" alt="unnamed (1)" src="https://github.com/user-attachments/assets/d93ee6c1-8e4d-4748-9f27-3cb8f3b5566b" />
 
 ## Build Log
 
