@@ -1,5 +1,5 @@
 
-# Interactive LED Cube
+Interactive Motion & Audio Reactive LED Cube
 
 A custom-designed interactive LED cube that combines motion sensing, sound visualization, and real-time lighting effects into a portable display powered by an ESP32.
 
