@@ -33,11 +33,23 @@ Responds to microphone input
 Shake triggers explosion
 Tilt changes animation direction
 
-🎮 Demo Mode
-
-Automatically showcases every feature
-
-eal-time response under 500 ms
+```text
+main.cpp
+│
+├── button.cpp
+├── microphone.cpp
+├── motion.cpp
+├── cube_state.cpp
+├── utilities.cpp
+│
+▼
+animations.cpp
+│
+▼
+led_effects.cpp
+│
+▼
+4× WS2812B LED Matrices
 
 ## Components
 - ESP32
