@@ -6,6 +6,7 @@
 #include "led_effects.h"
 #include "microphone.h"
 #include "motion.h"
+#include "wifi_canvas.h"
 
 unsigned long lastButtonPress = 0;
 
@@ -20,6 +21,8 @@ void setup()
     initializeMPU();
 
     initializeButton();
+
+    initWiFiCanvas();
 
     cubeState.currentMode = 0;
 

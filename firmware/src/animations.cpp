@@ -2,6 +2,7 @@
 #include "cube_state.h"
 
 #include "led_effects.h"
+#include "wifi_canvas.h"
 
 unsigned long previousDemoTime = 0;
 
@@ -9,7 +10,7 @@ void nextMode()
 {
     cubeState.currentMode++;
 
-    if (cubeState.currentMode > 6)
+    if (cubeState.currentMode > 7)
     {
         cubeState.currentMode = 0;
     }
@@ -157,6 +158,15 @@ void runAnimation()
                     break;
             }
 
+            break;
+        }
+
+        // ============================
+        // Mode 7 - Live Canvas (WiFi)
+        // ============================
+        case 7:
+        {
+            runWiFiCanvas();
             break;
         }
 

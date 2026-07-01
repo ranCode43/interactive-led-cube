@@ -1,5 +1,5 @@
 
-Interactive Motion & Audio Reactive LED Cube
+# Interactive LED Cube
 
 A custom-designed interactive LED cube that combines motion sensing, sound visualization, and real-time lighting effects into a portable display powered by an ESP32.
 
@@ -33,23 +33,19 @@ Responds to microphone input
 Shake triggers explosion
 Tilt changes animation direction
 
-```text
-main.cpp
-│
-├── button.cpp
-├── microphone.cpp
-├── motion.cpp
-├── cube_state.cpp
-├── utilities.cpp
-│
-▼
-animations.cpp
-│
-▼
-led_effects.cpp
-│
-▼
-4× WS2812B LED Matrices
+🎮 Demo Mode
+
+Automatically showcases every feature
+
+📡 Live Canvas (NEW)
+
+The cube hosts its own WiFi hotspot and a live pixel-art canvas web page. Anyone nearby can connect, draw on an 8x8 grid from their phone, and watch their art render on the cube in real time — no app required.
+
+- Connect to WiFi network `LED-Cube-Canvas` (password: `drawmecube`)
+- Open `192.168.4.1` in a browser
+- Tap squares to paint the cube live
+
+eal-time response under 500 ms
 
 ## Components
 - ESP32
@@ -66,6 +62,7 @@ The firmware is organized into independent modules so each subsystem has a singl
 - motion.cpp → IMU processing
 - button.cpp → User input
 - cube_state.cpp → Shared sensor state
+- wifi_canvas.cpp → WiFi AP + live web canvas
 - main.cpp → Main control loop
 
 
